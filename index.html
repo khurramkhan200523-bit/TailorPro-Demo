@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailorPro | Premium Dashboard</title>
+    <link rel="stylesheet" href="CSS.STYLE.css"> 
+
+</head>
+<body>
+    <div class="dashboard-wrapper">
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>Tailor<span>Pro</span></h2>
+            </div>
+            <nav class="side-nav">
+               <a href="#" id="navDashboard" class="active">Dashboard</a>
+    <a href="#" id="navNewOrder">New Order</a>
+    <a href="#" id="navCustomerList">Customer List</a>
+    <a href="#" id="navAnalytics">Analytics</a>
+    <a href="#" id="navSettings">Settings</a>
+            </nav>
+            <div class="sidebar-footer">
+                <p>v2.0 Premium</p>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search customer records...">
+                    <span class="search-icon">🔍</span>
+                </div>
+                <div class="user-profile">
+                    <span>Admin Panel</span>
+                </div>
+            </header>
+
+            <div class="content-body">
+                <div id="results" class="search-results-grid"></div>
+
+                <div class="glass-card">
+                    <div class="card-header">
+                        <h3 id="form-title">Create New Client Profile</h3>
+                        <p>Fill in the measurements and order specifics below.</p>
+                    </div>
+
+                    <form id="customerForm" class="styled-form">
+                        <input type="hidden" id="customerId">
+                        
+                        <div class="form-section">
+                            <h4>Basic Information</h4>
+                            <div class="input-grid">
+                                <div class="field">
+                                    <label>Full Name</label>
+                                    <input type="text" id="name" placeholder="John Doe" required>
+                                </div>
+                                <div class="field">
+                                    <label>Phone Number</label>
+                                    <input type="text" id="phone" placeholder="+1 234 567 890" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h4>Measurements (Inches)</h4>
+                            <div class="input-grid three-col">
+                                <div class="field">
+                                    <label>Chest</label>
+                                    <input type="text" id="chest" placeholder="0.0">
+                                </div>
+                                <div class="field">
+                                    <label>Waist</label>
+                                    <input type="text" id="waist" placeholder="0.0">
+                                </div>
+                                <div class="field">
+                                    <label>Length</label>
+                                    <input type="text" id="length" placeholder="0.0">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h4>Order Specifics</h4>
+                            <textarea id="orderNotes" rows="4" placeholder="Describe the suit style, fabric choice, and deadlines..."></textarea>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn-primary">Finalize & Save</button>
+                            <button type="button" onclick="resetForm()" class="btn-secondary">Reset Form</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
