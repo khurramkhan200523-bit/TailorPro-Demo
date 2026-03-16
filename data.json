@@ -1,0 +1,43 @@
+{
+  "customers": [
+    {
+      "id": "1773573703541",
+      "name": "Khurram Khan",
+      "phone": "03336572323",
+      "measurements": {
+        "chest": "45",
+        "waist": "40",
+        "length": "65"
+      },
+      "orders": [
+        "igygxyuf"
+      ]
+    },
+    {
+      "id": "1773573769000",
+      "name": "Talha KHan",
+      "phone": "+92 333-6572323",
+      "measurements": {
+        "chest": "45",
+        "waist": "23",
+        "length": "23"
+      },
+      "orders": [
+        "hushcu"
+      ]
+    },
+    {
+      "id": "1773575872863",
+      "name": "Hamza ",
+      "phone": "Khan",
+      "measurements": {
+        "chest": "45",
+        "waist": "43",
+        "length": "67"
+      },
+      "orders": [
+        "iywyfcysfc"
+      ]
+    }
+  ]
+}
